@@ -1,0 +1,7 @@
+
+
+AuthType basic
+AuthUserFile "/home/sites/p3rksy.co.uk/public_html/cardiffunitkd/admin/.htpasswd"
+AuthGroupFile /dev/null
+AuthName "Secure directory"
+Require valid-user

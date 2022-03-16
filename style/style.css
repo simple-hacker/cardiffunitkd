@@ -1,0 +1,686 @@
+/* 
+	Cardiff University Taekwon-do :: Default Style :: /style/style.css
+
+	Updated : 17/01/2012
+	Author  : Michael Perks
+*/
+
+
+/* Default Values
+------------------------------------------------------------------------------*/
+
+* {
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+ 
+
+/* Page Structure
+------------------------------------------------------------------------------*/
+
+body {
+	background: #151515;
+	/*background-image:url('../images/background.jpg');*/
+	color: #555;
+	font-family: Lucida Grande, Verdana, serif;
+	font-size: 12px;
+}
+
+#pageContainer {
+	margin: 20px auto;
+	border: 10px solid #fff;
+	margin-bottom: 10px;
+	width: 935px;
+	background: #fff;
+	overflow: auto;
+}
+
+#banner {
+	background: #fff url(../includes/random.php) top left no-repeat;
+	width: 100%;
+	height: 300px;
+}
+
+#pageContent {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 0%;
+	padding-left: 0%;
+	overflow: auto;
+}
+
+
+
+/* Navigation Menu
+------------------------------------------------------------------------------*/
+
+#navigation {
+   float:left;
+   width:100%;
+   background:#151515;
+   overflow:hidden;
+   position:relative;
+}
+#navigation ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#navigation ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+
+#navigation ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:10px 3px 2px 3px;
+   background:#151515;
+   color:#FFCC00;
+   text-decoration:none;
+   line-height:1.3em;
+   width: 125px;
+   height: 25px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+#navigation ul li a.small {
+   width: 30px;
+}
+
+
+#navigation ul li a:hover {
+   background:#FFCC00;
+   color:#151515;
+}
+
+/* Side Bar Navigation
+------------------------------------------------------------------------------*/
+
+#contentWrapper {
+	float: left;
+	width: 100%;
+}
+
+#contentColumn {
+	margin-right: 300px; /*Set right margin to RightColumnWidth+10px*/
+}
+#rightColumn {
+	float: left;
+	width: 300px; /*Width of right column in pixels*/
+	margin-left: -300px; /*Set left margin to -(RightColumnWidth) */
+}
+.innerTube {
+	margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+	margin-top: 0;
+}
+
+/* Slider
+------------------------------------------------------------------------------*/
+.slider {
+	text-align: center;
+}
+
+.slider h1 {
+	text-align: center;
+	font-size: 2.0em;
+	border-bottom: none;
+	cursor: pointer;
+}
+
+.sliderContent {
+	display: none;
+}
+
+
+
+/* Footer
+------------------------------------------------------------------------------*/
+
+#footer {
+	clear: both;
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding:  10px 0px 10px 0px;
+	color: #FFCC00;
+	background: #151515;
+	text-align: center;
+}
+
+#footer a {
+	color: #FFCC00;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #aaa;
+}
+
+
+/* pageContent Typography
+------------------------------------------------------------------------------*/
+h1 {
+	font-size: 1.5em;
+	border-bottom: 1px solid #333;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+p.center {
+	text-align: center;
+}
+
+
+#pageContent a {
+    color: #555;
+    text-decoration: none;
+}
+
+#pageContent p {
+	margin-bottom: 10px;
+}
+
+#pageContent h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#pageContent h3 {
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+
+
+/* News
+------------------------------------------------------------------------------*/
+.newsContainer {
+	overflow: hidden;
+}
+
+.newsContainer a {
+	border-bottom: 1px dashed #333;
+}
+
+.newsContainer a:hover {
+	border-bottom: 1px solid #555;
+}
+
+.newsContent {
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+.newsImage {
+	float: right;
+	margin: 0px 0px 10px 10px;
+	width: 200px;
+	border: 1px solid #E0E0E0;
+}
+
+.newsImage.left{
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+
+
+/* Twitter
+------------------------------------------------------------------------------*/
+#twitterContainer {
+	width: 30%;
+	background: #ffcc00;
+	float: right;
+	border: #333 solid 1px;
+}
+
+/* Right Column Buttons
+------------------------------------------------------------------------------*/
+#rightColumn a.button {
+	width: 100%;
+	display:block;
+	margin:2px 0 0 1px;
+	padding:10px 0px 2px 0px;
+	background: #E0E0E0;
+	color: #555;
+	border: 1px solid #333;
+	line-height:1.3em;
+	height: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#rightColumn a.button.altRow {
+	background: #F0F0F0;
+}
+
+#rightColumn a.button:hover {
+	background: #CCCCCC;
+}
+
+
+
+/* Training
+------------------------------------------------------------------------------*/
+
+#training {
+	width: 100%;
+}
+
+#training h2 {
+	font-size: 2.0em;
+	text-align: center;
+}
+
+#training p {
+	font-size: 1.2em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#bio img {
+	border: 1px solid #333;
+	margin: 0px 2px 0px 2px;
+}
+
+#bio img:hover {
+	border-style: dashed;
+}
+
+#bio a {
+	border-bottom: none;
+}
+
+#bio a:hover {
+	border-bottom: none;
+}
+
+
+#bioText {
+	float: left;
+	width:75%;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+#bioPicture {
+	float: left;
+}
+
+#bioGallery {
+	clear: both;
+	padding: 10px;
+	text-align: center;
+}
+
+
+/* Events
+------------------------------------------------------------------------------*/
+
+#events a {
+    border-bottom: none;
+}
+
+#events a:hover {
+    border-bottom: none;
+}
+
+
+.eventTitle {
+	clear: both;
+	margin: 15px 0 5px 0;
+	padding:10px 0px 10px 0px;
+	background: #151515;
+	color: #FFCC00;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.event {
+	margin-bottom: 5px;
+	background: #E0E0E0;
+	border: 1px solid #333;
+}
+
+.event.altRow {
+	background: #F0F0F0;
+}
+
+.event a {
+	display:block;
+	padding:10px 0px 0px 0px;
+	line-height:1.3em;
+	height: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.event a:hover {
+	background: #CCCCCC;
+}
+
+.event .eventDate {
+	float: left;
+	width: 100px;
+	padding:10px 5px 0px 5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.event .eventCategory {
+	float: right;
+	width: 100px;
+	padding:10px 5px 0px 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+/* Results
+------------------------------------------------------------------------------*/
+
+#results a {
+    border-bottom: none;
+}
+
+#results a:hover {
+    border-bottom: none;
+}
+
+.resultTitle {
+	clear: both;
+	margin: 15px 0 5px 0;
+	padding:10px 0px 10px 0px;
+	background: #151515;
+	color: #FFCC00;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.result {
+	margin-bottom: 5px;
+	background: #E0E0E0;
+	border: 1px solid #333;
+}
+
+.result.altRow {
+	background: #F0F0F0;
+}
+
+.result a {
+	display:block;
+	padding:10px 0px 0px 0px;
+	line-height:1.3em;
+	height: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.result a:hover {
+	background: #CCCCCC;
+}
+
+.result .resultDate {
+	float: left;
+	width: 100px;
+	padding:10px 5px 0px 5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.result .resultCategory {
+	float: right;
+	width: 100px;
+	padding:10px 5px 0px 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Total Medals in Results
+------------------------------------------------------------------------------*/
+.totalMedal {
+	width: 33%;
+	margin: 0 auto 15px auto;
+	display: inline-block;
+	text-align: center;
+	font-size: 6.5em;
+	font-weight: bold;
+}
+
+.totalMedal.Gold {
+	color: #FFCC00;
+}
+
+.totalMedal.Silver {
+	color: #C0C0C0;
+}
+
+.totalMedal.Bronze {
+	color: #A67D3D;
+}
+
+/* Hall of Fame - Results
+------------------------------------------------------------------------------*/
+#halloffame {
+	text-align: center;
+}
+
+.hof {
+	display: block;
+	overflow: auto;
+	border: 1px dashed #CCC;
+	padding: 5px 0 5px 0;
+	margin: 5px auto 5px auto;
+	font-size: 1.5em;
+	font-weight: bold;
+	background: #FFFFFF;
+}
+
+.hof.altRow {
+	background: #F8F8FF;
+}
+
+.hof .name {
+	display: inline-block;
+	width: 30%;
+}
+
+.hof .medal {
+	display: inline-block;
+	width: 10%;
+}
+
+.hof .medal.Gold {
+	color: #FFCC00;
+}
+
+.hof .medal.Silver {
+	color: #C0C0C0;
+}
+
+.hof .medal.Bronze {
+	color: #A67D3D;
+}
+
+.hof .medal.Points {
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: #808080;
+}
+
+.hof .medal.MedalCount {
+	color: #C0C0C0;
+}
+
+
+
+/* Gallery
+------------------------------------------------------------------------------*/
+#gallery {
+	text-align: center;
+}
+
+.delete {
+	display: none;
+	position: absolute;
+	top: 5px;
+	right: 2px;
+	width: 36px;
+	height: 36px;
+	background: url(/images/close.png);
+}
+
+.photo {
+	position: relative;
+	display: inline-block;
+}
+
+
+.photo img {
+	position: relative;
+	height: 103px;
+	padding: 0px;
+	margin: 3px 0px 0px 0px;
+}
+
+#gallery .photo img:hover {
+	opacity: 0.5;
+}
+
+#admingallery .photo img:hover + .delete {
+	display: block;
+}
+
+.year {
+	clear: both;
+	margin: 5px 0 5px 0;
+	padding:10px 0px 10px 0px;
+	background: #151515;
+	color: #FFCC00;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.video {
+	position: relative;
+	display: inline-block;
+	
+}
+
+.video img {
+	height: 103px;
+	padding: 0px;
+	margin: 3px 0px 0px 0px;
+}
+
+#gallery .video a, #admingallery .playbutton {
+	position: absolute;
+	background: url(/images/playgold.png);
+	height: 103px;
+	width: 183px;
+	top: 3px;
+	left: 0px;
+}
+
+#gallery .video a:hover {
+	background: url(/images/playgold-hover.png);
+}
+
+#admingallery .playbutton:hover + .delete {
+	display: block;
+}
+
+
+/* Admin
+------------------------------------------------------------------------------*/
+
+#admin a {
+    border-bottom: none;
+}
+
+#admin a:hover {
+    border-bottom: none;
+}
+
+.adminTitle {
+	clear: both;
+	margin: 15px 0 5px 0;
+	padding:10px 0px 10px 0px;
+	background: #151515;
+	color: #FFCC00;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.adminButton {
+	margin-bottom: 5px;
+	background: #E0E0E0;
+	border: 1px solid #333;
+}
+
+.adminButton.altRow {
+	background: #F0F0F0;
+}
+
+.adminButton a {
+	display:block;
+	padding:10px 0px 0px 0px;
+	line-height:1.3em;
+	height: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.adminButton a:hover {
+	background: #CCCCCC;
+}
+
+.adminButton a.addButton {
+	background: #C0C0C0;
+}
+
+.adminButton a:hover.addButton {
+	background: #CCCCCC;
+}
+
+.adminButton .adminDate {
+	float: left;
+	width: 100px;
+	padding:10px 5px 0px 5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.adminButton .adminCategory {
+	float: right;
+	width: 100px;
+	padding:10px 5px 0px 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}

@@ -1,0 +1,69 @@
+body {
+	/*background-image:url('../images/background.jpg');*/
+	color: #555;
+	font-family: Lucida Grande, Verdana, serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-align:center;
+}
+
+h2 {
+	font-size: 2.2em;
+	text-align:center;
+}
+
+h3 {
+	font-size: 1.5em;
+	text-align:center;
+}
+
+.totalMedal {
+	width: 33%;
+	margin: 0 auto 15px auto;
+	float: left;
+	text-align: center;
+	font-size: 6.0em;
+	font-weight: bold;
+}
+
+.totalMedal.Gold {
+	color: #FFCC00;
+}
+
+.totalMedal.Silver {
+	color: #C0C0C0;
+}
+
+.totalMedal.Bronze {
+	color: #A67D3D;
+}
+
+.medal {
+	width: 100%;
+	float: clear;
+	margin: 0 auto 15px auto;
+	text-align: center;
+	border: 1px dashed #CCC;
+	padding-bottom: 5px;
+}
+
+.medalImage {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+}
+
+.medalImage.Sparring {
+	vertical-align: top;
+	margin-top: 50px;
+}
+
+.medalInformation {
+	display: inline-block;
+	width: 400px;
+	font-weight: bold;
+}
